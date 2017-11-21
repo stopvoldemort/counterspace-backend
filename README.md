@@ -11,7 +11,7 @@
 
 ## React State Object
 
-state = {
+"state = {
   kitchens: {
     list: [array of kitchen objects meeting search parameters],
     selected: {kitchenID}  
@@ -28,7 +28,7 @@ state = {
   },
   guestReviews: {
     list: [array of review objects for selected guest]
-}
+}"
 
 
 ## External APIs
