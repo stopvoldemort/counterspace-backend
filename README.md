@@ -2,27 +2,8 @@
 
 ## Wireframes
 
-* <a href="https://www.fluidui.com/editor/live/preview/cF9PU2E4NXJPbVREeWdGT0hOV0ZPek40UXRSSzZHZEJ2dg==">Link to mockup on FluidUI</a>
+* <a href="https://www.fluidui.com/editor/live/preview/cF9PU2E4NXJPbVREeWdGT0hOV0ZPek40UXRSSzZHZEJ2dg==">Link to webpage mockup and diagram of the backend relationships on FluidUI</a>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<a href="https://www.lucidchart.com/invitations/accept/1f91db54-c8a8-4922-9016-a40b6cb4bde4">
+  Link to component sketch and routes on Lucid
+</a>
