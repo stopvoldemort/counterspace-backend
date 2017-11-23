@@ -8,31 +8,10 @@
   Link to component sketch and routes on Lucid
 </a>
 
-
-## React State Object
-
-state = {
-  kitchens: {
-    list: [array of kitchen objects meeting search parameters],
-    selected: {kitchenID}  
-    },
-  reservations: {
-    reservations: [array of reservation objects belonging to a user],
-    selectedReservation: {reservationID}
-  },
-  equipment: {
-    list: [array of equipment objects for selected kitchen]
-  },
-  kitchenReviews: {
-    list: [array of review objects for selected kitchen]
-  },
-  guestReviews: {
-    list: [array of review objects for selected guest]
-}
-
-
 ## External APIs
 
 * Google Maps
 
 ## External Libraries
+
+* active_model_serializers
