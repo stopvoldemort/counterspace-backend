@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   put '/kitchens/:id', to: 'kitchens#update'
   get '/kitchens/:id', to: 'kitchens#show'
 
-  post '/kitchens', to: 'kitchens#index'
+  get '/kitchens', to: 'kitchens#index'
   get '/', to: 'kitchens#cities'
   post '/kitchens/new', to: 'kitchens#create'
 

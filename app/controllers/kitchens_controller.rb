@@ -6,7 +6,8 @@ class KitchensController < ApplicationController
   end
 
   def index
-    @kitchens = Kitchen.where(city: params[:city])
+    city = params[:query].split(" ").map{|w| w.capitalize}.join(" ")
+    @kitchens = Kitchen.where(city: city)
     render json: @kitchens
   end
 
