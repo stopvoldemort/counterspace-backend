@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   put '/kitchens/:id', to: 'kitchens#update'
   get '/kitchens/:id', to: 'kitchens#show'
 
-  get '/kitchens', to: 'kitchens#index'
+  post '/kitchens', to: 'kitchens#index'
   get '/', to: 'kitchens#cities'
-  post '/kitchens', to: 'kitchens#create'
+  post '/kitchens/new', to: 'kitchens#create'
 
   post '/signin', to: 'sessions#create'
   get '/signout', to: 'sessions#destroy'
