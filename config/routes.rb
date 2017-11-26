@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   get '/', to: 'kitchens#cities'
   post '/kitchens/new', to: 'kitchens#create'
 
-  post '/signin', to: 'sessions#create'
-  get '/signout', to: 'sessions#destroy'
+  post '/login', to: 'sessions#create'
+  get '/logout', to: 'sessions#destroy'
 
   post '/users', to: 'users#create'
 

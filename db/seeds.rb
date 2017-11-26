@@ -47,6 +47,22 @@ Reservation.create(guest_id: 5, kitchen_id: 3, guest_number: 4, date: "2017-11-2
 Reservation.create(guest_id: 6, kitchen_id: 2, guest_number: 4, date: "2017-11-28")
 Reservation.create(guest_id: 7, kitchen_id: 1, guest_number: 4, date: "2017-11-29")
 
+Reservation.create(guest_id: 1, kitchen_id: 7, guest_number: 4, date: "2017-11-25")
+Reservation.create(guest_id: 2, kitchen_id: 6, guest_number: 4, date: "2017-11-26")
+Reservation.create(guest_id: 3, kitchen_id: 5, guest_number: 4, date: "2017-11-27")
+Reservation.create(guest_id: 4, kitchen_id: 4, guest_number: 4, date: "2017-11-28")
+Reservation.create(guest_id: 5, kitchen_id: 3, guest_number: 4, date: "2017-11-29")
+Reservation.create(guest_id: 6, kitchen_id: 2, guest_number: 4, date: "2017-11-20")
+Reservation.create(guest_id: 7, kitchen_id: 1, guest_number: 4, date: "2017-11-30")
+
+Reservation.create(guest_id: 1, kitchen_id: 7, guest_number: 4, date: "2017-11-27")
+Reservation.create(guest_id: 2, kitchen_id: 6, guest_number: 4, date: "2017-11-28")
+Reservation.create(guest_id: 3, kitchen_id: 5, guest_number: 4, date: "2017-11-29")
+Reservation.create(guest_id: 4, kitchen_id: 4, guest_number: 4, date: "2017-11-30")
+Reservation.create(guest_id: 5, kitchen_id: 3, guest_number: 4, date: "2017-11-15")
+Reservation.create(guest_id: 6, kitchen_id: 2, guest_number: 4, date: "2017-11-16")
+Reservation.create(guest_id: 7, kitchen_id: 1, guest_number: 4, date: "2017-11-17")
+
 
 KitchenReview.create(kitchen_id: 1, guest_id: 7, stars: 5, review: "I liked this kitchen")
 KitchenReview.create(kitchen_id: 2, guest_id: 6, stars: 2, review: "bad kitchen")
