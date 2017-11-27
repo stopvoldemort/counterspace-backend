@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get '/kitchens', to: 'kitchens#index'
   get '/', to: 'kitchens#cities'
-  post '/kitchens/new', to: 'kitchens#create'
+  post '/kitchens', to: 'kitchens#create'
 
   post '/login', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'

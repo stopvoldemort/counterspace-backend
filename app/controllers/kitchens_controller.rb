@@ -18,7 +18,6 @@ class KitchensController < ApplicationController
 
   def create
     @kitchen = Kitchen.new(kitchen_params)
-    @kitchen.owner_id = session[:user_id]
     if @kitchen.save
       render json: @kitchen
     else
@@ -45,7 +44,7 @@ class KitchensController < ApplicationController
   private
 
   def kitchen_params
-    params.require(:kitchen).permit(:title, :street_address, :city, :state, :zipcode, :description, :size, :max_guests, :base_price, :price_per_guest, :knives, :pots, :pans, :food_processor, :standing_mixer, :deep_fryer, :pressure_cooker)
+    params.require(:kitchen).permit(:title, :street_address, :city, :state, :zipcode, :description, :size, :max_guests, :base_price, :price_per_guest, :knives, :pots, :pans, :food_processor, :standing_mixer, :deep_fryer, :pressure_cooker, :owner_id)
   end
 
   def find_kitchen
