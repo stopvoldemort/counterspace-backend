@@ -1,3 +1,5 @@
 class ReservationSerializer < ActiveModel::Serializer
-  attributes :id, :date
+  attributes :id, :date, :guest_number
+
+  belongs_to :kitchen
 end

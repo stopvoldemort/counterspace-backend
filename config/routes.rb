@@ -14,6 +14,9 @@ Rails.application.routes.draw do
 
   post '/users', to: 'users#create'
 
+  get '/reservations/:userid', to: 'reservations#index'
+  post '/reservations', to: 'reservations#create'
+
 
 
 end
