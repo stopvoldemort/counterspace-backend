@@ -7,13 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-User.create(name: "david", email: "david@guest.com", city: "New York, NY", bio: "just a guy", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu")
-User.create(name: "andrew", email: "andrew@guest.com", city: "New York, NY", bio: "just a guy", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu")
-User.create(name: "phil", email: "phil@guest.com", city: "New York, NY", bio: "just a guy", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu")
-User.create(name: "claire", email: "claire@guest.com", city: "New York, NY", bio: "just a guy", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu")
-User.create(name: "alex", email: "alex@guest.com", city: "New York, NY", bio: "just a guy", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu")
-User.create(name: "whitney", email: "whitney@guest.com", city: "New York, NY", bio: "just a guy", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu")
-User.create(name: "elise", email: "elise@guest.com", city: "New York, NY", bio: "just a guy", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu")
+User.create(name: "david", email: "david@guest.com", city: "New York, NY", bio: "just a guy", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://cdn.pixabay.com/photo/2017/04/01/21/37/beautiful-2194518_1280.jpg")
+User.create(name: "andrew", email: "andrew@guest.com", city: "New York, NY", bio: "just a guy", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://cdn.pixabay.com/photo/2017/04/01/21/37/beautiful-2194518_1280.jpg")
+User.create(name: "phil", email: "phil@guest.com", city: "New York, NY", bio: "just a guy", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://cdn.pixabay.com/photo/2017/04/01/21/37/beautiful-2194518_1280.jpg")
+User.create(name: "claire", email: "claire@guest.com", city: "New York, NY", bio: "just a guy", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://cdn.pixabay.com/photo/2017/04/01/21/37/beautiful-2194518_1280.jpg")
+User.create(name: "alex", email: "alex@guest.com", city: "New York, NY", bio: "just a guy", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://cdn.pixabay.com/photo/2017/04/01/21/37/beautiful-2194518_1280.jpg")
+User.create(name: "whitney", email: "whitney@guest.com", city: "New York, NY", bio: "just a guy", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://cdn.pixabay.com/photo/2017/04/01/21/37/beautiful-2194518_1280.jpg")
+User.create(name: "elise", email: "elise@guest.com", city: "New York, NY", bio: "just a guy", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://cdn.pixabay.com/photo/2017/04/01/21/37/beautiful-2194518_1280.jpg")
 
 
 Kitchen.create(title: "a great kitchen", street_address: "70 Clark Street", city: "New York", state: "NY", zipcode: 11201, size: 450, max_guests: 6, base_price: 50, price_per_guest: 10, owner_id: 7,
@@ -38,6 +38,13 @@ Kitchen.create(title: "nietzsche would have loved this kitchen", street_address:
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: true, standing_mixer: false, deep_fryer: true, pressure_cooker: true,
   blurb: "...even though he didn't care for cooking per se.", description: "We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.")
 
+KitchenPicture.create(kitchen_id: 1, url: "http://res.cloudinary.com/dwtfwfzsx/image/upload/v1511897313/hrgeuelw54uzj60knkcw.jpg")
+KitchenPicture.create(kitchen_id: 2, url: "http://res.cloudinary.com/dwtfwfzsx/image/upload/v1511897313/hrgeuelw54uzj60knkcw.jpg")
+KitchenPicture.create(kitchen_id: 3, url: "http://res.cloudinary.com/dwtfwfzsx/image/upload/v1511897313/hrgeuelw54uzj60knkcw.jpg")
+KitchenPicture.create(kitchen_id: 4, url: "http://res.cloudinary.com/dwtfwfzsx/image/upload/v1511897313/hrgeuelw54uzj60knkcw.jpg")
+KitchenPicture.create(kitchen_id: 5, url: "http://res.cloudinary.com/dwtfwfzsx/image/upload/v1511897313/hrgeuelw54uzj60knkcw.jpg")
+KitchenPicture.create(kitchen_id: 6, url: "http://res.cloudinary.com/dwtfwfzsx/image/upload/v1511897313/hrgeuelw54uzj60knkcw.jpg")
+KitchenPicture.create(kitchen_id: 7, url: "http://res.cloudinary.com/dwtfwfzsx/image/upload/v1511897313/hrgeuelw54uzj60knkcw.jpg")
 
 Reservation.create(guest_id: 1, kitchen_id: 7, guest_number: 4, date: "2017-11-23")
 Reservation.create(guest_id: 2, kitchen_id: 6, guest_number: 4, date: "2017-11-24")

@@ -5,4 +5,5 @@ class User < ApplicationRecord
   has_many :reviews, class_name: "GuestReview", foreign_key: "guest_id"
   has_many :reviewed_guests, class_name: "GuestReview", foreign_key: "host_id"
   has_many :reviewed_kitchens, class_name: "KitchenReview", foreign_key: "guest_id"
+  has_many :owners, through: :kitchens
 end

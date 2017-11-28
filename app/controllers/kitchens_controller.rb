@@ -17,12 +17,11 @@ class KitchensController < ApplicationController
   end
 
   def create
-    @kitchen = Kitchen.new(kitchen_params)
-    if @kitchen.save
-      render json: @kitchen
-    else
-      render json: false
+    @kitchen = Kitchen.create(kitchen_params)
+    params[:kitchen][:kitchen_pictures].each do |pic|
+      KitchenPicture.create({url: pic[:url], kitchen_id: @kitchen.id})
     end
+    render json: @kitchen
   end
 
   def edit
@@ -44,7 +43,30 @@ class KitchensController < ApplicationController
   private
 
   def kitchen_params
-    params.require(:kitchen).permit(:title, :street_address, :city, :state, :zipcode, :description, :size, :max_guests, :base_price, :price_per_guest, :knives, :pots, :pans, :food_processor, :standing_mixer, :deep_fryer, :pressure_cooker, :owner_id)
+    params.require(:kitchen).permit(
+      [
+        :title,
+        :street_address,
+        :city,
+        :state,
+        :zipcode,
+        :description,
+        :size,
+        :max_guests,
+        :base_price,
+        :price_per_guest,
+        :knives,
+        :pots,
+        :pans,
+        :food_processor,
+        :standing_mixer,
+        :deep_fryer,
+        :pressure_cooker,
+        :owner_id,
+        :kitchen_pictures,
+        :blurb
+      ]
+    )
   end
 
   def find_kitchen

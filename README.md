@@ -15,3 +15,4 @@
 ## External Libraries
 
 * active_model_serializers
+* paperclip

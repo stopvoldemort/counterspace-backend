@@ -3,5 +3,6 @@ class KitchenSerializer < ActiveModel::Serializer
 
   has_many :reservations
   has_many :reviews
+  has_many :kitchen_pictures
   belongs_to :owner
 end

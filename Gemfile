@@ -28,6 +28,9 @@ gem 'rack-cors'
 # ADDED SO CAN GENERATE SERIALIZERS
 gem 'active_model_serializers'
 
+# ADDED SO AS TO SAVE IMAGE ATTACHMENTS
+gem 'paperclip', '~>5.1.0'
+
 
 
 group :development, :test do
