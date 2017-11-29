@@ -7,13 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-User.create(name: "david", email: "david@guest.com", city: "New York, NY", bio: "do not be worried about what people think of you", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/med/men/62.jpg")
-User.create(name: "andrew", email: "andrew@guest.com", city: "New York, NY", bio: "when it’s over, leave.", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/med/men/34.jpg")
-User.create(name: "phil", email: "phil@guest.com", city: "New York, NY", bio: "go ahead. do your worst.", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/med/men/83.jpg")
-User.create(name: "claire", email: "claire@guest.com", city: "New York, NY", bio: "enjoy the silence", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/med/men/80.jpg")
-User.create(name: "alex", email: "alex@guest.com", city: "New York, NY", bio: "everytime you smile at me i fall in love over and over again ", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/med/men/80.jpg")
-User.create(name: "whitney", email: "whitney@guest.com", city: "New York, NY", bio: "it’s awful to want to go away", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/med/men/84.jpg")
-User.create(name: "elise", email: "elise@guest.com", city: "New York, NY", bio: "i cant and i dont to want see another thing", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/med/women/59.jpg")
+User.create(name: "david", email: "david@guest.com", city: "New York, NY", bio: "do not be worried about what people think of you", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/62.jpg")
+User.create(name: "andrew", email: "andrew@guest.com", city: "New York, NY", bio: "when it’s over, leave.", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/34.jpg")
+User.create(name: "phil", email: "phil@guest.com", city: "New York, NY", bio: "go ahead. do your worst.", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/83.jpg")
+User.create(name: "claire", email: "claire@guest.com", city: "New York, NY", bio: "enjoy the silence", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/80.jpg")
+User.create(name: "alex", email: "alex@guest.com", city: "New York, NY", bio: "everytime you smile at me i fall in love over and over again ", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/80.jpg")
+User.create(name: "whitney", email: "whitney@guest.com", city: "New York, NY", bio: "it’s awful to want to go away", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/84.jpg")
+User.create(name: "elise", email: "elise@guest.com", city: "New York, NY", bio: "i cant and i dont to want see another thing", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/women/59.jpg")
 
 
 Kitchen.create(title: "a great kitchen", street_address: "70 Clark Street", city: "New York", state: "NY", zipcode: 11201, size: 450, max_guests: 6, base_price: 50, price_per_guest: 10, owner_id: 7,

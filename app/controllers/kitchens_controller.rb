@@ -50,6 +50,8 @@ class KitchensController < ApplicationController
         :city,
         :state,
         :zipcode,
+        :latitude,
+        :longitude,
         :description,
         :size,
         :max_guests,

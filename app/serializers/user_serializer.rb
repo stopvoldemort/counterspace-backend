@@ -4,4 +4,5 @@ class UserSerializer < ActiveModel::Serializer
   has_many :reservations
   has_many :reviews
   has_many :owners
+  has_many :reviewed_kitchens
 end
