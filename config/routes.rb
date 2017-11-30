@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get '/kitchens', to: 'kitchens#index'
   get '/', to: 'kitchens#cities'
   post '/kitchens', to: 'kitchens#create'
+  delete '/kitchens/:kitchenid', to: 'kitchens#destroy'
+
 
   post '/login', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'

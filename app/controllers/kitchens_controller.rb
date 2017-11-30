@@ -37,8 +37,8 @@ class KitchensController < ApplicationController
   end
 
   def destroy
-    find_kitchen
-    @kitchen.destroy
+    Kitchen.find(params[:kitchenid]).destroy
+    render json: true
   end
 
   private
