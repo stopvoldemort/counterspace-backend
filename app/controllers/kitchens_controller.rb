@@ -6,9 +6,9 @@ class KitchensController < ApplicationController
   end
 
   def index
-    # city = params[:query].split(" ").map{|w| w.capitalize}.join(" ")
-    # @kitchens = Kitchen.where(city: city)
-    @kitchens = Kitchen.all
+    lng = params[:longitude].to_f
+    lat = params[:latitude].to_f
+    @kitchens = Kitchen.all.select { |k| ((k.longitude - lng).abs < 2) && ((k.latitude - lat).abs < 2) }
     render json: @kitchens
   end
 
