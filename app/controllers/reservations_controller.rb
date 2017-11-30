@@ -14,6 +14,11 @@ class ReservationsController < ApplicationController
     render json: @reservations
   end
 
+  def destroy
+    Reservation.destroy(params[:reservationid]).destroy
+    render json: true
+  end
+
   private
 
   def reservation_params
