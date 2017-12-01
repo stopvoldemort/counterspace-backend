@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/', to: 'kitchens#cities'
   post '/kitchens', to: 'kitchens#create'
   delete '/kitchens/:kitchenid', to: 'kitchens#destroy'
+  put '/kitchens/:kitchenid', to: 'kitchens#update'
 
 
   post '/login', to: 'sessions#create'
