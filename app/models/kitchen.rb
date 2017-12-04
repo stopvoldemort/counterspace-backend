@@ -5,4 +5,27 @@ class Kitchen < ApplicationRecord
   has_many :reviews, class_name: "KitchenReview", foreign_key: "kitchen_id", dependent: :destroy
   has_many :kitchen_pictures, dependent: :destroy
   accepts_nested_attributes_for :kitchen_pictures
+
+  def show_hash()
+    selected_kitchen = self
+    response = {}
+    if selected_kitchen
+      response[:selected_kitchen] = selected_kitchen
+      response[:selected_kitchen_reviews] = selected_kitchen.reviews
+      response[:selected_kitchen_review_authors] = selected_kitchen.reviews.map { |r| r.guest }
+      response[:selected_kitchen_reservations] = selected_kitchen.reservations
+      response[:selected_kitchen_pictures] = selected_kitchen.kitchen_pictures
+      response[:selected_kitchen_owner] = selected_kitchen.owner
+    else
+      response[:selected_kitchen] = []
+      response[:selected_kitchen_reviews] = []
+      response[:selected_kitchen_review_authors] = []
+      response[:selected_kitchen_reservations] = []
+      response[:selected_kitchen_pictures] = []
+      response[:selected_kitchen_owner] = {}
+    end
+    response
+  end
+
+
 end

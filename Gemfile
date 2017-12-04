@@ -31,6 +31,9 @@ gem 'active_model_serializers'
 # ADDED SO AS TO SAVE IMAGE ATTACHMENTS
 gem 'paperclip', '~>5.1.0'
 
+# ADDED FOR JWT METHODS USED IN AUTHENTICATION (E.G., ENCODE, DECODE)
+gem 'jwt'
+
 
 
 group :development, :test do

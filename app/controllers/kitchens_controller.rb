@@ -1,5 +1,8 @@
 class KitchensController < ApplicationController
 
+  skip_before_action :authorized, only: [:cities, :index, :show]
+
+
   def cities
     @cities = Kitchen.select(:city).distinct.map {|c| c.city}
     render json: @cities
@@ -8,32 +11,58 @@ class KitchensController < ApplicationController
   def index
     lng = params[:longitude].to_f
     lat = params[:latitude].to_f
-    @kitchens = Kitchen.all.select { |k| ((k.longitude - lng).abs < 2) && ((k.latitude - lat).abs < 2) }
-    render json: @kitchens
+    kitchens = Kitchen.all.select { |k| ((k.longitude - lng).abs < 2) && ((k.latitude - lat).abs < 2) }
+    response = {}
+    if !kitchens.empty?
+      response[:kitchens] = kitchens
+      response[:kitchen_pictures] = kitchens.map {|k| k.kitchen_pictures[0]}
+      response[:kitchen_reviews] = kitchens.map {|k| k.reviews}.flatten
+    else
+      response[:kitchens] = []
+      response[:kitchen_pictures] = []
+      response[:kitchen_reviews] = []
+    end
+    render json: response
   end
 
   def show
-    find_kitchen
-    render json: @kitchen
+    selected_kitchen = Kitchen.find(params[:id])
+    response = selected_kitchen.show_hash
+    render json: response
   end
 
   def create
-    @kitchen = Kitchen.create(kitchen_params)
+    selected_kitchen = Kitchen.create(kitchen_params)
     params[:kitchen][:kitchen_pictures].each do |pic|
-      KitchenPicture.create({url: pic[:url], kitchen_id: @kitchen.id})
+      KitchenPicture.create({url: pic[:url], kitchen_id: selected_kitchen.id})
     end
-    render json: @kitchen
+    response = selected_kitchen.show_hash
+    render json: response
+    # response = {}
+    # response[:kitchen] = kitchen
+    # response[:kitchen_pictures] = kitchen.kitchen_pictures
+    # response[:kitchen_owner] = kitchen.owner
+    # render json: response
   end
 
-  def edit
-    find_kitchen
-    render json: @kitchen
-  end
+  # def edit
+  #   kitchen = Kitchen.find(params[:id])
+  #   if kitchen
+  #     response = {}
+  #     response[:kitchen] = kitchen
+  #     response[:kitchen_pictures] = kitchen.kitchen_pictures
+  #     response[:kitchen_owner] = kitchen.owner
+  #     render json: response
+  #   else
+  #     render json: { error: "There was an error with your account."
+  #   end
+  # end
 
   def update
     find_kitchen
     @kitchen.update(kitchen_params)
-    render json: @kitchen
+    response = @kitchen.show_hash
+    render json: response
   end
 
   def destroy

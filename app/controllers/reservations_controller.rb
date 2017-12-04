@@ -10,8 +10,20 @@ class ReservationsController < ApplicationController
   end
 
   def index
+    user = User.find(params[:userid])
     @reservations = User.find(params[:userid]).reservations
-    render json: @reservations
+    reservations = {}
+    reservations[:list] = user.reservations
+    if user.reservations
+      reservations[:kitchens] = user.reservations.map {|k| k.kitchen}.uniq{|k| k.id}
+      reservations[:kitchen_pictures] = reservations[:kitchens].map{|k| k.kitchen_pictures[0]}
+      reservations[:kitchen_reviews] = user.reviewed_kitchens
+    else
+      reservations[:kitchens] = []
+      reservations[:kitchen_pictures] = []
+      reservations[:kitchen_reviews] = []
+    end
+    render json: reservations
   end
 
   def destroy
