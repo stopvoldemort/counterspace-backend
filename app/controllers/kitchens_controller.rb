@@ -38,25 +38,7 @@ class KitchensController < ApplicationController
     end
     response = selected_kitchen.show_hash
     render json: response
-    # response = {}
-    # response[:kitchen] = kitchen
-    # response[:kitchen_pictures] = kitchen.kitchen_pictures
-    # response[:kitchen_owner] = kitchen.owner
-    # render json: response
   end
-
-  # def edit
-  #   kitchen = Kitchen.find(params[:id])
-  #   if kitchen
-  #     response = {}
-  #     response[:kitchen] = kitchen
-  #     response[:kitchen_pictures] = kitchen.kitchen_pictures
-  #     response[:kitchen_owner] = kitchen.owner
-  #     render json: response
-  #   else
-  #     render json: { error: "There was an error with your account."
-  #   end
-  # end
 
   def update
     find_kitchen
