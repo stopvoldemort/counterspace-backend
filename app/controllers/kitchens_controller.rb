@@ -43,6 +43,10 @@ class KitchensController < ApplicationController
   def update
     find_kitchen
     @kitchen.update(kitchen_params)
+    @kitchen.kitchen_pictures.each{|kp| kp.destroy}
+    params[:kitchen][:kitchen_pictures].each do |pic|
+      KitchenPicture.create({url: pic[:url], kitchen_id: @kitchen.id})
+    end
     response = @kitchen.show_hash
     render json: response
   end
