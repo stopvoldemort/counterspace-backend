@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171129154605) do
+ActiveRecord::Schema.define(version: 20171204234557) do
 
   create_table "guest_reviews", force: :cascade do |t|
     t.integer "stars"
@@ -61,6 +61,17 @@ ActiveRecord::Schema.define(version: 20171129154605) do
     t.string "blurb"
     t.float "longitude"
     t.float "latitude"
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.text "content"
+    t.integer "recipient_id"
+    t.integer "sender_id"
+    t.integer "reservation_id"
+    t.boolean "read"
+    t.float "milliseconds"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "reservations", force: :cascade do |t|

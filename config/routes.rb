@@ -24,6 +24,9 @@ Rails.application.routes.draw do
 
   post '/kitchen_reviews', to: 'kitchen_reviews#create'
 
+  post '/messages', to: 'messages#create'
+  post '/read_messages', to: 'messages#read'
+
 
 
 end
