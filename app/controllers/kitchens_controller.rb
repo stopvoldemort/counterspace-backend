@@ -11,7 +11,7 @@ class KitchensController < ApplicationController
   def index
     lng = params[:longitude].to_f
     lat = params[:latitude].to_f
-    kitchens = Kitchen.all.select { |k| ((k.longitude - lng).abs < 2) && ((k.latitude - lat).abs < 2) }
+    kitchens = Kitchen.all.select { |k| ((k.longitude - lng).abs < 0.25) && ((k.latitude - lat).abs < 0.125) }
     response = {}
     if !kitchens.empty?
       response[:kitchens] = kitchens
