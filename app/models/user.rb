@@ -15,6 +15,7 @@ class User < ApplicationRecord
     response[:kitchens] = self.kitchens
     response[:kitchen_reviews] = self.reviewed_kitchens
     response[:kitchen_pictures] = self.kitchens.map {|k| k.kitchen_pictures[0]}
+    response[:kitchen_reservations] = self.kitchens.map {|k| k.reservations}.flatten
     response[:reviews_of_users_kitchens] = self.kitchens.map {|k| k.reviews}.flatten
     response[:received_messages] = self.received_messages
     response[:sent_messages] = self.sent_messages
