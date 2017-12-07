@@ -17,25 +17,25 @@ User.create(name: "whitney", email: "whitney@guest.com", city: "New York, NY", b
 User.create(name: "elise", email: "elise@guest.com", city: "New York, NY", bio: "i cant and i dont to want see another thing", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/women/59.jpg")
 
 
-Kitchen.create(title: "a great kitchen", street_address: "1 East 75th Street", city: "New York", state: "NY", zipcode: 11201, size: 450, max_guests: 6, base_price: 50, price_per_guest: 10, owner_id: 7,
+Kitchen.create(title: "a great kitchen", street_address: "1 East 75th Street", city: "New York", state: "NY", zipcode: 11201, size: 450, max_guests: 6, base_price: 50, price_per_guest: 10, owner_id: 1,
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: true, standing_mixer: false, deep_fryer: true, pressure_cooker: true,
   blurb: "you'll like it", latitude: 40.7743744, longitude: -73.9652162, description: description)
-Kitchen.create(title: "no kitchen better", street_address: "70 Clark Street", city: "New York", state: "NY", zipcode: 11201, size: 800, max_guests: 4, base_price: 100, price_per_guest: 20, owner_id: 7,
+Kitchen.create(title: "no kitchen better", street_address: "70 Clark Street", city: "New York", state: "NY", zipcode: 11201, size: 800, max_guests: 4, base_price: 100, price_per_guest: 20, owner_id: 2,
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: false, standing_mixer: false, deep_fryer: true, pressure_cooker: true,
   blurb: "a good kitchen at a good price", latitude: 40.6975669, longitude: -73.9934464, description: description)
-Kitchen.create(title: "a kitchen so good you'll cook yourself", street_address: "73 Pacific St.", city: "Forest Hills", state: "NY", zipcode: 11375, size: 450, max_guests: 8, base_price: 50, price_per_guest: 10, owner_id: 7,
+Kitchen.create(title: "a kitchen so good you'll cook yourself", street_address: "73 Pacific St.", city: "Forest Hills", state: "NY", zipcode: 11375, size: 450, max_guests: 8, base_price: 50, price_per_guest: 10, owner_id: 3,
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: true, standing_mixer: true, deep_fryer: true, pressure_cooker: false,
   blurb: "you will like cooking here", latitude: 40.709783, longitude: -73.678025, description: description)
-Kitchen.create(title: "youve never seen such luxury", street_address: "709 Honey Creek Dr.", city: "New York", state: "NY", zipcode: 10028, size: 450, max_guests: 12, base_price: 30, price_per_guest: 6, owner_id: 7,
+Kitchen.create(title: "youve never seen such luxury", street_address: "709 Honey Creek Dr.", city: "New York", state: "NY", zipcode: 10028, size: 450, max_guests: 12, base_price: 30, price_per_guest: 6, owner_id: 4,
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: true, standing_mixer: false, deep_fryer: false, pressure_cooker: true,
   blurb: "don't think about any other kitchen", latitude: 40.762935, longitude: -73.962879, description: description)
-Kitchen.create(title: "you will never be happy but you can rent this kitchen", street_address: "812 Thatcher Court", city: "Yonkers", state: "NY", zipcode: 10701, size: 450, max_guests: 14, base_price: 60, price_per_guest: 8, owner_id: 4,
+Kitchen.create(title: "you will never be happy but you can rent this kitchen", street_address: "812 Thatcher Court", city: "Yonkers", state: "NY", zipcode: 10701, size: 450, max_guests: 14, base_price: 60, price_per_guest: 8, owner_id: 5,
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: false, standing_mixer: true, deep_fryer: true, pressure_cooker: false,
   blurb: "insane things tend to happen in this kitchen ;)", latitude: 40.915278, longitude: -73.957756, description: description)
-Kitchen.create(title: "life is nothing but a rental / rent my kitchen", street_address: "73 South Sherman Street", city: "Astoria", state: "NY", zipcode: 11106, size: 450, max_guests: 6, base_price: 20, price_per_guest: 5, owner_id: 4,
+Kitchen.create(title: "life is nothing but a rental / rent my kitchen", street_address: "73 South Sherman Street", city: "Astoria", state: "NY", zipcode: 11106, size: 450, max_guests: 6, base_price: 20, price_per_guest: 5, owner_id: 6,
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: true, standing_mixer: false, deep_fryer: true, pressure_cooker: true,
   blurb: "not a sex dungeon", latitude: 40.626387, longitude: -73.703920, description: description)
-Kitchen.create(title: "a kitchen to love", street_address: "15 St Margarets Lane", city: "New York", state: "NY", zipcode: 10003, size: 450, max_guests: 8, base_price: 75, price_per_guest: 15, owner_id: 4,
+Kitchen.create(title: "a kitchen to love", street_address: "15 St Margarets Lane", city: "New York", state: "NY", zipcode: 10003, size: 450, max_guests: 8, base_price: 75, price_per_guest: 15, owner_id: 7,
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: true, standing_mixer: false, deep_fryer: true, pressure_cooker: true,
   blurb: "I don't care for cooking but I do care for strangers cooking...", latitude: 42.945430, longitude: -78.856549, description: description)
 
@@ -65,37 +65,37 @@ KitchenPicture.create(kitchen_id: 6, url: "http://www.theeastendcafe.com/wp-cont
 KitchenPicture.create(kitchen_id: 7, url: "http://www.normabudden.com/upload/2017/10/30/kitchen-corseforg-kitchen-l-78c45b2f53394bda.jpg")
 KitchenPicture.create(kitchen_id: 7, url: "https://i.shelterness.com/2017/11/02-a-chic-emerald-kitchen-island-with-a-marble-countertop-and-a-breakfast-zone-on-one-side.jpg")
 
-Reservation.create(guest_id: 1, kitchen_id: 7, guest_number: 4, date: "2017-12-23")
-Reservation.create(guest_id: 2, kitchen_id: 6, guest_number: 4, date: "2017-12-24")
-Reservation.create(guest_id: 3, kitchen_id: 5, guest_number: 4, date: "2017-12-25")
-Reservation.create(guest_id: 3, kitchen_id: 4, guest_number: 4, date: "2017-12-26")
-Reservation.create(guest_id: 5, kitchen_id: 3, guest_number: 4, date: "2017-12-27")
-Reservation.create(guest_id: 6, kitchen_id: 2, guest_number: 4, date: "2017-12-28")
-Reservation.create(guest_id: 6, kitchen_id: 1, guest_number: 4, date: "2017-12-28")
-
-Reservation.create(guest_id: 1, kitchen_id: 7, guest_number: 4, date: "2017-12-14")
-Reservation.create(guest_id: 5, kitchen_id: 6, guest_number: 4, date: "2017-11-26")
-Reservation.create(guest_id: 4, kitchen_id: 5, guest_number: 4, date: "2017-11-27")
-Reservation.create(guest_id: 3, kitchen_id: 4, guest_number: 4, date: "2017-11-28")
-Reservation.create(guest_id: 2, kitchen_id: 3, guest_number: 4, date: "2017-11-29")
-Reservation.create(guest_id: 1, kitchen_id: 2, guest_number: 4, date: "2017-11-20")
-Reservation.create(guest_id: 1, kitchen_id: 1, guest_number: 4, date: "2017-11-20")
-
-Reservation.create(guest_id: 2, kitchen_id: 7, guest_number: 4, date: "2017-10-27")
-Reservation.create(guest_id: 6, kitchen_id: 6, guest_number: 4, date: "2017-10-28")
-Reservation.create(guest_id: 5, kitchen_id: 5, guest_number: 4, date: "2017-10-29")
-Reservation.create(guest_id: 1, kitchen_id: 4, guest_number: 4, date: "2017-10-30")
-Reservation.create(guest_id: 2, kitchen_id: 3, guest_number: 4, date: "2017-10-15")
-Reservation.create(guest_id: 3, kitchen_id: 2, guest_number: 4, date: "2017-10-16")
-Reservation.create(guest_id: 5, kitchen_id: 2, guest_number: 4, date: "2017-10-16")
-
-Reservation.create(guest_id: 3, kitchen_id: 7, guest_number: 4, date: "2017-10-27")
-Reservation.create(guest_id: 5, kitchen_id: 6, guest_number: 4, date: "2017-10-28")
-Reservation.create(guest_id: 6, kitchen_id: 5, guest_number: 4, date: "2017-10-29")
-Reservation.create(guest_id: 6, kitchen_id: 4, guest_number: 4, date: "2017-10-30")
-Reservation.create(guest_id: 1, kitchen_id: 3, guest_number: 4, date: "2017-10-15")
-Reservation.create(guest_id: 3, kitchen_id: 2, guest_number: 4, date: "2017-10-16")
-Reservation.create(guest_id: 2, kitchen_id: 2, guest_number: 4, date: "2017-10-16")
+# Reservation.create(guest_id: 1, kitchen_id: 7, guest_number: 4, date: "2017-12-23")
+# Reservation.create(guest_id: 2, kitchen_id: 6, guest_number: 4, date: "2017-12-24")
+# Reservation.create(guest_id: 3, kitchen_id: 5, guest_number: 4, date: "2017-12-25")
+# Reservation.create(guest_id: 3, kitchen_id: 4, guest_number: 4, date: "2017-12-26")
+# Reservation.create(guest_id: 5, kitchen_id: 3, guest_number: 4, date: "2017-12-27")
+# Reservation.create(guest_id: 6, kitchen_id: 2, guest_number: 4, date: "2017-12-28")
+# Reservation.create(guest_id: 6, kitchen_id: 1, guest_number: 4, date: "2017-12-28")
+#
+# Reservation.create(guest_id: 1, kitchen_id: 7, guest_number: 4, date: "2017-12-14")
+# Reservation.create(guest_id: 5, kitchen_id: 6, guest_number: 4, date: "2017-11-26")
+# Reservation.create(guest_id: 4, kitchen_id: 5, guest_number: 4, date: "2017-11-27")
+# Reservation.create(guest_id: 3, kitchen_id: 4, guest_number: 4, date: "2017-11-28")
+# Reservation.create(guest_id: 2, kitchen_id: 3, guest_number: 4, date: "2017-11-29")
+# Reservation.create(guest_id: 1, kitchen_id: 2, guest_number: 4, date: "2017-11-20")
+# Reservation.create(guest_id: 1, kitchen_id: 1, guest_number: 4, date: "2017-11-20")
+#
+# Reservation.create(guest_id: 2, kitchen_id: 7, guest_number: 4, date: "2017-10-27")
+# Reservation.create(guest_id: 6, kitchen_id: 6, guest_number: 4, date: "2017-10-28")
+# Reservation.create(guest_id: 5, kitchen_id: 5, guest_number: 4, date: "2017-10-29")
+# Reservation.create(guest_id: 1, kitchen_id: 4, guest_number: 4, date: "2017-10-30")
+# Reservation.create(guest_id: 2, kitchen_id: 3, guest_number: 4, date: "2017-10-15")
+# Reservation.create(guest_id: 3, kitchen_id: 2, guest_number: 4, date: "2017-10-16")
+# Reservation.create(guest_id: 5, kitchen_id: 2, guest_number: 4, date: "2017-10-16")
+#
+# Reservation.create(guest_id: 3, kitchen_id: 7, guest_number: 4, date: "2017-10-27")
+# Reservation.create(guest_id: 5, kitchen_id: 6, guest_number: 4, date: "2017-10-28")
+# Reservation.create(guest_id: 6, kitchen_id: 5, guest_number: 4, date: "2017-10-29")
+# Reservation.create(guest_id: 6, kitchen_id: 4, guest_number: 4, date: "2017-10-30")
+# Reservation.create(guest_id: 1, kitchen_id: 3, guest_number: 4, date: "2017-10-15")
+# Reservation.create(guest_id: 3, kitchen_id: 2, guest_number: 4, date: "2017-10-16")
+# Reservation.create(guest_id: 2, kitchen_id: 2, guest_number: 4, date: "2017-10-16")
 
 
 KitchenReview.create(kitchen_id: 1, guest_id: 6, stars: 5, review: "I liked this kitchen")
@@ -115,28 +115,87 @@ KitchenReview.create(kitchen_id: 2, guest_id: 2, stars: 2, review: "This kitchen
 KitchenReview.create(kitchen_id: 1, guest_id: 1, stars: 5, review: "run, don't walk, to rent this kitchen")
 
 
-def create_unread_guest_messages(guest, owner, reservation)
-  Message.create(content: "Hi, let me know if you need anything", recipient_id: guest, sender_id: owner, reservation_id: reservation, read: true)
-  Message.create(content: "Will do, thanks", recipient_id: owner, sender_id: guest, reservation_id: reservation, read: true)
-  Message.create(content: "Do you have any carrots?", recipient_id: owner, sender_id: guest, reservation_id: reservation, read: true)
-  Message.create(content: "I believe so, let me check", recipient_id: guest, sender_id: owner, reservation_id: reservation, read: false)
-  Message.create(content: "Yes, I have carrots you can use.", recipient_id: guest, sender_id: owner, reservation_id: reservation, read: false)
+def create_unread_owner_messages(guest, owner, reservation)
+  Message.create(content: "Hi, let me know if you need anything", recipient_id: guest, sender_id: owner, reservation_id: reservation, read: false)
+  Message.create(content: "Will do, thanks", recipient_id: owner, sender_id: guest, reservation_id: reservation, read: false)
+  Message.create(content: "Do you have any carrots?", recipient_id: owner, sender_id: guest, reservation_id: reservation, read: false)
 end
 
-def create_unread_owner_messages(guest, owner, reservation)
+def create_unread_guest_messages(guest, owner, reservation)
+  Message.create(content: "Hi, let me know if you need anything", recipient_id: guest, sender_id: owner, reservation_id: reservation, read: false)
+  Message.create(content: "FYI, the door will be unlocked", recipient_id: guest, sender_id: owner, reservation_id: reservation, read: false)
+end
+
+def create_default_messages(guest, owner, reservation)
   Message.create(content: "Hi, let me know if you need anything", recipient_id: guest, sender_id: owner, reservation_id: reservation, read: true)
   Message.create(content: "FYI, the door will be unlocked", recipient_id: guest, sender_id: owner, reservation_id: reservation, read: true)
-  Message.create(content: "Thanks", recipient_id: owner, sender_id: guest, reservation_id: reservation, read: false)
-  Message.create(content: "I may be a little late", recipient_id: owner, sender_id: guest, reservation_id: reservation, read: false)
-  Message.create(content: "I'm running 18 minutes behind schedule", recipient_id: owner, sender_id: guest, reservation_id: reservation, read: false)
+  Message.create(content: "Thanks for everything, we had a great time", recipient_id: owner, sender_id: guest, reservation_id: reservation, read: true)
+  Message.create(content: "Glad you enjoyed it", recipient_id: guest, sender_id: owner, reservation_id: reservation, read: true)
 end
 
 
-create_unread_guest_messages(6, 7, 7)
-create_unread_guest_messages(2, 4, 2)
-create_unread_guest_messages(1, 4, 1)
-create_unread_guest_messages(3, 4, 3)
-create_unread_guest_messages(5, 7, 5)
+def create_reservation(guest, kitchen_id, date, unread_messages_recipient)
+  guest_id = User.find_by(name: guest).id
+  owner_id = Kitchen.find(kitchen_id).owner_id
+  if guest_id == owner_id
+    "guest is the owner"
+  else
+    Reservation.create(guest_id: guest_id, kitchen_id: kitchen_id, guest_number: 4, date: date)
+    reservation_id = Reservation.last.id
+    if unread_messages_recipient == "owner"
+      create_unread_owner_messages(guest_id, owner_id, reservation_id)
+    elsif unread_messages_recipient == "guest"
+      create_unread_guest_messages(guest_id, owner_id, reservation_id)
+    else
+      create_default_messages(guest_id, owner_id, reservation_id)
+    end
+  end
+end
 
-create_unread_owner_messages(1, 4, 8)
-create_unread_owner_messages(3, 7, 4)
+
+def seed_reservations_and_messages(n)
+  users = ["david", "andrew", "phil", "elise", "claire", "whitney", "alex"]
+  unread_messages_recipients = ["guest", "owner", "default"]
+  already_created = []
+  i = 0
+  while i < n
+    guest = users.sample
+    day = 1 + rand(28)
+    month = 10 + rand(3)
+
+    if month > 11 && day > 7
+      unread_messages_recipient = unread_messages_recipients.sample
+    else
+      unread_messages_recipient = "default"
+    end
+
+    if day < 10
+      day = "0#{day}"
+    end
+
+    date = "2017-#{month}-#{day}"
+
+    kitchen_id = 1 + rand(6)
+
+    already_created << [guest, kitchen_id, date, unread_messages_recipient]
+    if already_created.length == already_created.uniq.length
+      create_reservation(guest, kitchen_id, date, unread_messages_recipient)
+    else
+      already_created = already_created.uniq
+    end
+    i+=1
+  end
+end
+
+seed_reservations_and_messages(70)
+
+
+# create_unread_guest_messages(6, 7, 7)
+# create_unread_guest_messages(2, 4, 2)
+# create_unread_guest_messages(1, 4, 1)
+# create_unread_guest_messages(3, 4, 3)
+# create_unread_guest_messages(5, 7, 5)
+# create_unread_guest_messages(6, 7, 6)
+#
+# create_unread_owner_messages(1, 4, 8)
+# create_unread_owner_messages(3, 7, 4)
