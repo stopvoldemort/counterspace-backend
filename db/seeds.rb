@@ -12,7 +12,7 @@ User.create(name: "david", email: "david@guest.com", city: "New York, NY", bio: 
 User.create(name: "andrew", email: "andrew@guest.com", city: "New York, NY", bio: "when it’s over, leave.", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/34.jpg")
 User.create(name: "phil", email: "phil@guest.com", city: "New York, NY", bio: "go ahead. do your worst.", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/83.jpg")
 User.create(name: "claire", email: "claire@guest.com", city: "New York, NY", bio: "enjoy the silence", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/80.jpg")
-User.create(name: "alex", email: "alex@guest.com", city: "New York, NY", bio: "everytime you smile at me i fall in love over and over again ", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/80.jpg")
+User.create(name: "alex", email: "alex@guest.com", city: "New York, NY", bio: "everytime you smile at me i fall in love over and over again ", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/45.jpg")
 User.create(name: "whitney", email: "whitney@guest.com", city: "New York, NY", bio: "it’s awful to want to go away", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/84.jpg")
 User.create(name: "elise", email: "elise@guest.com", city: "New York, NY", bio: "i cant and i dont to want see another thing", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/women/59.jpg")
 
@@ -116,7 +116,7 @@ KitchenReview.create(kitchen_id: 1, guest_id: 1, stars: 5, review: "run, don't w
 
 
 def create_unread_owner_messages(guest, owner, reservation)
-  Message.create(content: "Hi, let me know if you need anything", recipient_id: guest, sender_id: owner, reservation_id: reservation, read: false)
+  Message.create(content: "Hi, let me know if you need anything", recipient_id: guest, sender_id: owner, reservation_id: reservation, read: true)
   Message.create(content: "Will do, thanks", recipient_id: owner, sender_id: guest, reservation_id: reservation, read: false)
   Message.create(content: "Do you have any carrots?", recipient_id: owner, sender_id: guest, reservation_id: reservation, read: false)
 end
@@ -160,7 +160,7 @@ def seed_reservations_and_messages(n)
   i = 0
   while i < n
     guest = users.sample
-    day = 1 + rand(28)
+    day = 1 + rand(29)
     month = 10 + rand(3)
 
     if month > 11 && day > 7
@@ -175,7 +175,7 @@ def seed_reservations_and_messages(n)
 
     date = "2017-#{month}-#{day}"
 
-    kitchen_id = 1 + rand(6)
+    kitchen_id = 1 + rand(7)
 
     already_created << [guest, kitchen_id, date, unread_messages_recipient]
     if already_created.length == already_created.uniq.length
