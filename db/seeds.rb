@@ -6,38 +6,40 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-description = "We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-User.create(name: "david", email: "david@guest.com", city: "New York, NY", bio: "do not be worried about what people think of you", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/62.jpg")
-User.create(name: "andrew", email: "andrew@guest.com", city: "New York, NY", bio: "when it’s over, leave.", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/34.jpg")
-User.create(name: "phil", email: "phil@guest.com", city: "New York, NY", bio: "go ahead. do your worst.", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/83.jpg")
-User.create(name: "claire", email: "claire@guest.com", city: "New York, NY", bio: "enjoy the silence", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/women/80.jpg")
-User.create(name: "alex", email: "alex@guest.com", city: "New York, NY", bio: "everytime you smile at me i fall in love over and over again ", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/45.jpg")
-User.create(name: "whitney", email: "whitney@guest.com", city: "New York, NY", bio: "it’s awful to want to go away", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/women/84.jpg")
-User.create(name: "elise", email: "elise@guest.com", city: "New York, NY", bio: "i cant and i dont to want see another thing", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/women/59.jpg")
+User.create(name: "David", email: "david@guest.com", city: "New York, NY", bio: "A professional coder with a love for cooking.", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/62.jpg")
+User.create(name: "Andrew", email: "andrew@guest.com", city: "New York, NY", bio: "A New Yorker through-and-through.", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/34.jpg")
+User.create(name: "Phil", email: "phil@guest.com", city: "New York, NY", bio: "A writer and a father.", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/83.jpg")
+User.create(name: "Claire", email: "claire@guest.com", city: "New York, NY", bio: "A nurse-practitioner who loves to cook.", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/women/80.jpg")
+User.create(name: "Alex", email: "alex@guest.com", city: "New York, NY", bio: "I work in cancer research and do impov comedy on the side.", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/men/45.jpg")
+User.create(name: "Whitney", email: "whitney@guest.com", city: "New York, NY", bio: "A bond trader and husband.", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/women/84.jpg")
+User.create(name: "Elise", email: "elise@guest.com", city: "New York, NY", bio: "An artist", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/women/59.jpg")
+
+User.create(name: "demo", email: "demo@guest.com", city: "New York, NY", bio: "A test user", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/women/59.jpg")
 
 
-Kitchen.create(title: "a great kitchen", street_address: "1 East 75th Street", city: "New York", state: "NY", zipcode: 11201, size: 450, max_guests: 6, base_price: 50, price_per_guest: 10, owner_id: 1,
+Kitchen.create(title: "A Great Kitchen", street_address: "1 East 75th Street", city: "New York", state: "NY", zipcode: 11201, size: 450, max_guests: 6, base_price: 50, price_per_guest: 10, owner_id: 1,
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: true, standing_mixer: false, deep_fryer: true, pressure_cooker: true,
-  blurb: "you'll like it", latitude: 40.7743744, longitude: -73.9652162, description: description)
-Kitchen.create(title: "no kitchen better", street_address: "70 Clark Street", city: "New York", state: "NY", zipcode: 11201, size: 800, max_guests: 4, base_price: 100, price_per_guest: 20, owner_id: 2,
+  blurb: "You'll like it!", latitude: 40.7743744, longitude: -73.9652162, description: description)
+Kitchen.create(title: "No Kitchen Better", street_address: "70 Clark Street", city: "New York", state: "NY", zipcode: 11201, size: 800, max_guests: 4, base_price: 100, price_per_guest: 20, owner_id: 2,
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: false, standing_mixer: false, deep_fryer: true, pressure_cooker: true,
-  blurb: "a good kitchen at a good price", latitude: 40.6975669, longitude: -73.9934464, description: description)
-Kitchen.create(title: "a kitchen so good you'll cook yourself", street_address: "73 Pacific St.", city: "Forest Hills", state: "NY", zipcode: 11375, size: 450, max_guests: 8, base_price: 50, price_per_guest: 10, owner_id: 3,
+  blurb: "A good kitchen at a good price,", latitude: 40.6975669, longitude: -73.9934464, description: description)
+Kitchen.create(title: "Such a Good Kitchen", street_address: "73 Pacific St.", city: "Forest Hills", state: "NY", zipcode: 11375, size: 450, max_guests: 8, base_price: 50, price_per_guest: 10, owner_id: 3,
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: true, standing_mixer: true, deep_fryer: true, pressure_cooker: false,
-  blurb: "you will like cooking here", latitude: 40.709783, longitude: -73.678025, description: description)
-Kitchen.create(title: "youve never seen such luxury", street_address: "709 Honey Creek Dr.", city: "New York", state: "NY", zipcode: 10028, size: 450, max_guests: 12, base_price: 30, price_per_guest: 6, owner_id: 4,
+  blurb: "You will like cooking here.", latitude: 40.709783, longitude: -73.678025, description: description)
+Kitchen.create(title: "You've never seen such a luxurious kitchen", street_address: "709 Honey Creek Dr.", city: "New York", state: "NY", zipcode: 10028, size: 450, max_guests: 12, base_price: 30, price_per_guest: 6, owner_id: 4,
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: true, standing_mixer: false, deep_fryer: false, pressure_cooker: true,
-  blurb: "don't think about any other kitchen", latitude: 40.762935, longitude: -73.962879, description: description)
-Kitchen.create(title: "you will never be happy but you can rent this kitchen", street_address: "812 Thatcher Court", city: "Yonkers", state: "NY", zipcode: 10701, size: 450, max_guests: 14, base_price: 60, price_per_guest: 8, owner_id: 5,
+  blurb: "Don't think about any other kitchen.", latitude: 40.762935, longitude: -73.962879, description: description)
+Kitchen.create(title: "State-of-the-Art Kitchen", street_address: "812 Thatcher Court", city: "Yonkers", state: "NY", zipcode: 10701, size: 450, max_guests: 14, base_price: 60, price_per_guest: 8, owner_id: 5,
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: false, standing_mixer: true, deep_fryer: true, pressure_cooker: false,
-  blurb: "insane things tend to happen in this kitchen ;)", latitude: 40.915278, longitude: -73.957756, description: description)
-Kitchen.create(title: "life is nothing but a rental / rent my kitchen", street_address: "73 South Sherman Street", city: "Astoria", state: "NY", zipcode: 11106, size: 450, max_guests: 6, base_price: 20, price_per_guest: 5, owner_id: 6,
+  blurb: "Great things tend to be cooked in this kitchen.", latitude: 40.915278, longitude: -73.957756, description: description)
+Kitchen.create(title: "Rent my Kitchen!", street_address: "73 South Sherman Street", city: "Astoria", state: "NY", zipcode: 11106, size: 450, max_guests: 6, base_price: 20, price_per_guest: 5, owner_id: 6,
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: true, standing_mixer: false, deep_fryer: true, pressure_cooker: true,
-  blurb: "not a sex dungeon", latitude: 40.626387, longitude: -73.703920, description: description)
-Kitchen.create(title: "a kitchen to love", street_address: "15 St Margarets Lane", city: "New York", state: "NY", zipcode: 10003, size: 450, max_guests: 8, base_price: 75, price_per_guest: 15, owner_id: 7,
+  blurb: "A truly fine kitchen.", latitude: 40.626387, longitude: -73.703920, description: description)
+Kitchen.create(title: "A Kitchen to Love", street_address: "15 St Margarets Lane", city: "New York", state: "NY", zipcode: 10003, size: 450, max_guests: 8, base_price: 75, price_per_guest: 15, owner_id: 7,
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: true, standing_mixer: false, deep_fryer: true, pressure_cooker: true,
-  blurb: "I don't care for cooking but I do care for strangers cooking...", latitude: 42.945430, longitude: -78.856549, description: description)
+  blurb: "A great kitchen that gets too little use.", latitude: 42.945430, longitude: -78.856549, description: description)
 
 KitchenPicture.create(kitchen_id: 1, url: "http://res.cloudinary.com/dwtfwfzsx/image/upload/v1511897313/hrgeuelw54uzj60knkcw.jpg")
 KitchenPicture.create(kitchen_id: 1, url: "http://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2013/9/12/0/HKITC111_After-Yellow-Kitchen-Cabinets-Close_4x3.jpg.rend.hgtvcom.616.462.suffix/1400954077147.jpeg")
@@ -64,38 +66,6 @@ KitchenPicture.create(kitchen_id: 6, url: "https://media3.s-nbcnews.com/j/newscm
 KitchenPicture.create(kitchen_id: 6, url: "http://www.theeastendcafe.com/wp-content/uploads/2014/10/Cool-Kitchen-Storage.jpg")
 KitchenPicture.create(kitchen_id: 7, url: "http://www.normabudden.com/upload/2017/10/30/kitchen-corseforg-kitchen-l-78c45b2f53394bda.jpg")
 KitchenPicture.create(kitchen_id: 7, url: "https://i.shelterness.com/2017/11/02-a-chic-emerald-kitchen-island-with-a-marble-countertop-and-a-breakfast-zone-on-one-side.jpg")
-
-# Reservation.create(guest_id: 1, kitchen_id: 7, guest_number: 4, date: "2017-12-23")
-# Reservation.create(guest_id: 2, kitchen_id: 6, guest_number: 4, date: "2017-12-24")
-# Reservation.create(guest_id: 3, kitchen_id: 5, guest_number: 4, date: "2017-12-25")
-# Reservation.create(guest_id: 3, kitchen_id: 4, guest_number: 4, date: "2017-12-26")
-# Reservation.create(guest_id: 5, kitchen_id: 3, guest_number: 4, date: "2017-12-27")
-# Reservation.create(guest_id: 6, kitchen_id: 2, guest_number: 4, date: "2017-12-28")
-# Reservation.create(guest_id: 6, kitchen_id: 1, guest_number: 4, date: "2017-12-28")
-#
-# Reservation.create(guest_id: 1, kitchen_id: 7, guest_number: 4, date: "2017-12-14")
-# Reservation.create(guest_id: 5, kitchen_id: 6, guest_number: 4, date: "2017-11-26")
-# Reservation.create(guest_id: 4, kitchen_id: 5, guest_number: 4, date: "2017-11-27")
-# Reservation.create(guest_id: 3, kitchen_id: 4, guest_number: 4, date: "2017-11-28")
-# Reservation.create(guest_id: 2, kitchen_id: 3, guest_number: 4, date: "2017-11-29")
-# Reservation.create(guest_id: 1, kitchen_id: 2, guest_number: 4, date: "2017-11-20")
-# Reservation.create(guest_id: 1, kitchen_id: 1, guest_number: 4, date: "2017-11-20")
-#
-# Reservation.create(guest_id: 2, kitchen_id: 7, guest_number: 4, date: "2017-10-27")
-# Reservation.create(guest_id: 6, kitchen_id: 6, guest_number: 4, date: "2017-10-28")
-# Reservation.create(guest_id: 5, kitchen_id: 5, guest_number: 4, date: "2017-10-29")
-# Reservation.create(guest_id: 1, kitchen_id: 4, guest_number: 4, date: "2017-10-30")
-# Reservation.create(guest_id: 2, kitchen_id: 3, guest_number: 4, date: "2017-10-15")
-# Reservation.create(guest_id: 3, kitchen_id: 2, guest_number: 4, date: "2017-10-16")
-# Reservation.create(guest_id: 5, kitchen_id: 2, guest_number: 4, date: "2017-10-16")
-#
-# Reservation.create(guest_id: 3, kitchen_id: 7, guest_number: 4, date: "2017-10-27")
-# Reservation.create(guest_id: 5, kitchen_id: 6, guest_number: 4, date: "2017-10-28")
-# Reservation.create(guest_id: 6, kitchen_id: 5, guest_number: 4, date: "2017-10-29")
-# Reservation.create(guest_id: 6, kitchen_id: 4, guest_number: 4, date: "2017-10-30")
-# Reservation.create(guest_id: 1, kitchen_id: 3, guest_number: 4, date: "2017-10-15")
-# Reservation.create(guest_id: 3, kitchen_id: 2, guest_number: 4, date: "2017-10-16")
-# Reservation.create(guest_id: 2, kitchen_id: 2, guest_number: 4, date: "2017-10-16")
 
 
 KitchenReview.create(kitchen_id: 1, guest_id: 6, stars: 5, review: "I liked this kitchen")
@@ -188,14 +158,3 @@ def seed_reservations_and_messages(n)
 end
 
 seed_reservations_and_messages(70)
-
-
-# create_unread_guest_messages(6, 7, 7)
-# create_unread_guest_messages(2, 4, 2)
-# create_unread_guest_messages(1, 4, 1)
-# create_unread_guest_messages(3, 4, 3)
-# create_unread_guest_messages(5, 7, 5)
-# create_unread_guest_messages(6, 7, 6)
-#
-# create_unread_owner_messages(1, 4, 8)
-# create_unread_owner_messages(3, 7, 4)
