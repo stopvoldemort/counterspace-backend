@@ -16,7 +16,6 @@ User.create(name: "Alex", email: "alex@guest.com", city: "New York, NY", bio: "I
 User.create(name: "Whitney", email: "whitney@guest.com", city: "New York, NY", bio: "A bond trader and husband.", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/women/84.jpg")
 User.create(name: "Elise", email: "elise@guest.com", city: "New York, NY", bio: "An artist", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/women/59.jpg")
 
-User.create(name: "demo", email: "demo@guest.com", city: "New York, NY", bio: "A test user", password_digest: "$2a$10$IDyIVpnUT7uOoW2JiazHmOF.cNMjxCal3AdusyDjn3gIC2p25R9Iu", pic_url: "https://randomuser.me/api/portraits/women/59.jpg")
 
 
 Kitchen.create(title: "A Great Kitchen", street_address: "1 East 75th Street", city: "New York", state: "NY", zipcode: 11201, size: 450, max_guests: 6, base_price: 50, price_per_guest: 10, owner_id: 1,
@@ -124,7 +123,7 @@ end
 
 
 def seed_reservations_and_messages(n)
-  users = ["david", "andrew", "phil", "elise", "claire", "whitney", "alex"]
+  users = ["David", "Andrew", "Phil", "Elise", "Claire", "Whitney", "Alex"]
   unread_messages_recipients = ["guest", "owner", "default"]
   already_created = []
   i = 0
