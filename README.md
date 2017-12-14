@@ -2,7 +2,7 @@
 
 This is the Rails back-end for Counterspace, my final project for the Flatiron School's software engineering program. It is not a "real" website -- the kitchens and users are randomly seeded, and not based on real people or places.
 
-The repository for the front-end can be found here: https://github.com/stopvoldemort/kitchen_frontend.
+The repository for the front-end can be found here: https://github.com/stopvoldemort/counterspace.
 
 ## Description
 
