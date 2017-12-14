@@ -14,6 +14,6 @@ Guests are able to search for kitchens by location, book reservations, message t
 
 * Ruby on Rails
 * Google Maps API
-* paperclip gem
-* jwt gem
+* Paperclip
+* JWT
 * Images stored on Cloudinary
