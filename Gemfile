@@ -37,6 +37,9 @@ gem 'paperclip', '~>5.1.0'
 # ADDED FOR JWT METHODS USED IN AUTHENTICATION (E.G., ENCODE, DECODE)
 gem 'jwt'
 
+# ADDED FOR HEROKU
+ruby "2.3.1"
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
