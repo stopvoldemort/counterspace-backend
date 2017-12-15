@@ -40,7 +40,6 @@ Kitchen.create(title: "A Kitchen to Love", street_address: "15 St Margarets Lane
   knives: "wusthof", pots: "le creuset", pans: "copper", food_processor: true, standing_mixer: false, deep_fryer: true, pressure_cooker: true,
   blurb: "A great kitchen that gets too little use.", latitude: 42.945430, longitude: -78.856549, description: description)
 
-KitchenPicture.create(kitchen_id: 1, url: "http://res.cloudinary.com/dwtfwfzsx/image/upload/v1511897313/hrgeuelw54uzj60knkcw.jpg")
 KitchenPicture.create(kitchen_id: 1, url: "http://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2013/9/12/0/HKITC111_After-Yellow-Kitchen-Cabinets-Close_4x3.jpg.rend.hgtvcom.616.462.suffix/1400954077147.jpeg")
 KitchenPicture.create(kitchen_id: 1, url: "https://www.homedepot.com/hdus/en_US/DTCCOMNEW/fetch/Category_Pages/Kitchen/OFFR-hampton-bay.jpg")
 KitchenPicture.create(kitchen_id: 1, url: "https://images2.roomstogo.com/is/image/roomstogo/dr_rm_redhook_cntr~Red-Hook-Pecan-5-Pc-Counter-Height-Dining-Room.jpeg?$pdp_gallery_945$")

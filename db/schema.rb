@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20171206021729) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "guest_reviews", force: :cascade do |t|
     t.integer "stars"
     t.text "review"
