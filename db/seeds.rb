@@ -41,9 +41,7 @@ Kitchen.create(title: "A Kitchen to Love", street_address: "15 St Margarets Lane
   blurb: "A great kitchen that gets too little use.", latitude: 42.945430, longitude: -78.856549, description: description)
 
 KitchenPicture.create(kitchen_id: 1, url: "http://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2013/9/12/0/HKITC111_After-Yellow-Kitchen-Cabinets-Close_4x3.jpg.rend.hgtvcom.616.462.suffix/1400954077147.jpeg")
-KitchenPicture.create(kitchen_id: 1, url: "https://www.homedepot.com/hdus/en_US/DTCCOMNEW/fetch/Category_Pages/Kitchen/OFFR-hampton-bay.jpg")
 KitchenPicture.create(kitchen_id: 1, url: "https://images2.roomstogo.com/is/image/roomstogo/dr_rm_redhook_cntr~Red-Hook-Pecan-5-Pc-Counter-Height-Dining-Room.jpeg?$pdp_gallery_945$")
-KitchenPicture.create(kitchen_id: 1, url: "https://www.homedepot.com/hdus/en_US/DTCCOMNEW/fetch/Category_Pages/Kitchen/REFACE-Before.jpg")
 KitchenPicture.create(kitchen_id: 2, url: "http://www.ikea.com/ms/media/cho_room/20153/kitchen/20153_cosk30a/20153_cosk30a_01_PH124155.jpg")
 KitchenPicture.create(kitchen_id: 2, url: "https://i.pinimg.com/736x/ed/54/e4/ed54e4eb057feb7156b9c353d3bd1c1d.jpg")
 KitchenPicture.create(kitchen_id: 2, url: "http://www4.pictures.lonny.com/mp/2C00p3sSrm9l.jpg")

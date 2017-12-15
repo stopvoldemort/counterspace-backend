@@ -1,5 +1,7 @@
 # Welcome To CounterSpace.
 
+https://counterspace.herokuapp.com/
+
 This is the Rails back-end for Counterspace, my final project for the Flatiron School's software engineering program. It is not a "real" website -- the kitchens and users are randomly seeded, and not based on real people or places.
 
 Demonstration: https://youtu.be/x639Y-InrX8
